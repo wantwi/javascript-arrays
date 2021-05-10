@@ -1,0 +1,9 @@
+let isPalindron =(strVal)=>{
+//revers string and compare with the origian string value
+let res;
+let resverStr = [...strVal].reverse().join("")
+
+return resverStr === strVal? res = true : res = false
+}
+
+console.log(isPalindron("madam"))
