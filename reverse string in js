@@ -1,0 +1,38 @@
+let rvsfun =(str)=>{
+let rvstr =""
+let arr =[...str]
+	arr.map(x =>{
+  	rvstr = x+rvstr
+  })
+  return rvstr
+}
+
+console.log("map: ",rvsfun("hello"))
+
+
+let rvfun =(str)=>{
+		let arr = [...str]
+    return arr.reverse().join('')
+}
+
+console.log(rvfun("hello"))
+
+let rvfn2 = (str)=>{
+let rst =""
+for(let a = str.length -1; a>=0; a--){
+	rst = rst +str[a]
+}
+return rst
+}
+
+console.log(rvfn2("hello"))
+
+let rvfun3=(str)=>{
+let resv =""
+for(let c of str){
+	resv =c + resv
+}
+return resv;
+}
+
+console.log(rvfun3("hello"))
