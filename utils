@@ -1,0 +1,48 @@
+//palindron
+let funx = (str)=>{
+
+return str.split("").reduce((vals,init)=> init +vals
+)
+}
+
+console.log(funx("william"))
+
+let funx2 =(str)=>{
+let reversStr = funx(str)
+
+return reversStr === str
+}
+
+console.log(funx2("game"))
+
+//reverse int and retrun as integer
+let reversInt =(int)=>{
+	let num = [... int.toString()]
+  return parseInt(num.reverse().join('')) * Math.sign(int)
+}
+
+console.log(reversInt(-12345))
+
+//capitalize each word
+let captalize =(str)=>{
+
+
+return str.toLowerCase().split(' ')
+.map(x=>{
+	return x[0].toUpperCase() +x.substr(1) 
+}).join(' ')
+}
+
+console.log(captalize("i love you"))
+
+//capitalize each word
+let cap =(str)=>{
+return str.replace(/\b[a-z]/gi, (c)=>{
+return c.toUpperCase()
+})
+}
+
+console.log(cap("i love you"))
+
+
+
